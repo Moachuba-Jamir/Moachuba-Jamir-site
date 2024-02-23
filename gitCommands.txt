@@ -1,0 +1,25 @@
+creating a new branch
+
+git brach (shows us the brach we're in) main truk
+
+Creating a new branch
+    git branch -c addSpinner
+
+moving to any other brach 
+    git checkout addSpinner
+
+create and edit necessary changes 
+then do .... git add . (adding all the unchecked files) // this adds it to the brach 
+
+
+now we commit
+
+git commit -m "added spinner"
+
+// now it's commited to the branch (it's not going nowhere)
+
+now we push it to the head of the origin 
+
+git push origin head 
+
+

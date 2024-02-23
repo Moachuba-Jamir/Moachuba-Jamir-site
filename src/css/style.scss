@@ -3,6 +3,7 @@
     padding: 0 !important;
     margin: 0 !important;
     scroll-behavior:smooth;
+    background-color: black;
 }
 
 
@@ -63,12 +64,35 @@ html::-webkit-scrollbar{
     }
   }
 
-#loading{
+  #loading {
+    position: fixed; /* Fixed positioning to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    background-color: black;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    z-index: 9999; /* Ensure it's on top of other content */
+    background:#090909;
+}
+
+#loading img {
+    width: 50%; /* Adjust the width of your loading animation as needed */
+    height: calc(100% * 9 / 16); /* Adjust the height of your loading animation as needed */
+}
+
+@media screen and (max-width: 480px){
+    #loadingImg{
+        width: 100%; /* Set the width to fill the container */
+        height: auto; /* Let the height adjust proportionally */
+        max-width: 100%; /* Ensure the image doesn't exceed its original size */
+        object-fit: contain; 
+    }
+    #loading{
+        background: #090909;
+    }
+
+
 }
