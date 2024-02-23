@@ -26,3 +26,11 @@ window.onload = function() {
         loadGif();
     }
 };
+
+// scrollintoview 
+function viewEl(el){
+    if(el){
+        var item = document.getElementById(el);
+        item.scrollIntoView({behavior:'smooth', block:'start', inline: 'nearest'});
+    }
+}

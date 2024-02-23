@@ -14,6 +14,7 @@ body{
     .splineContainer{
         position: relative;
         height: 100vh;
+        background: rgb(9, 9, 9);
     }
 
 
@@ -32,6 +33,8 @@ body{
     .myName{
         color: white
     }
+
+
 }
 
 html::-webkit-scrollbar{
@@ -64,6 +67,8 @@ html::-webkit-scrollbar{
     }
   }
 
+
+ 
   #loading {
     position: fixed; /* Fixed positioning to cover the entire viewport */
     top: 0;
@@ -82,6 +87,82 @@ html::-webkit-scrollbar{
     width: 50%; /* Adjust the width of your loading animation as needed */
     height: calc(100% * 9 / 16); /* Adjust the height of your loading animation as needed */
 }
+
+.projects{
+    padding-block: 5% !important;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    height: 27rem !important;
+    width: 20rem;
+    margin: 3% !important;
+    border: 2px solid #740374 !important;
+    box-shadow: #9d0173 0px 8px 15px !important;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover{
+   transform: rotateY(-28deg) rotateX(-10deg) scale(1.1);
+   -webkit-transform: rotateY(-28deg) rotateX(-10deg) scale(1.1);
+   -moz-transform: rotateY(-28deg) rotateX(-10deg) scale(1.1);
+   -ms-transform: rotateY(-28deg) rotateX(-10deg) scale(1.1);
+   -o-transform: rotateY(-28deg) rotateX(-10deg) scale(1.1);
+}
+
+.card:hover .btn{
+        transform: scale(1.09);
+        -webkit-transform: scale(1.09);
+        -moz-transform: scale(1.09);
+        -ms-transform: scale(1.09);
+        -o-transform: scale(1.09);
+}
+
+.projectHeading h1{
+    text-align: center;
+    padding-bottom: 2%!important;
+    color: #d6d6d6;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 6rem !important;
+}
+.card-body, .card-title,  .card-text{
+    background-color: white !important;
+    border-radius: 5%;
+    padding: 2% !important;
+}
+
+.btn{
+    margin: 2%;
+    padding: 3% !important;
+    background: #1d1d1d !important;
+    transition: transfrom 600ms ease-in;
+    -webkit-transition: transfrom 600ms ease-in;
+    -moz-transition: transfrom 600ms ease-in;
+    -ms-transition: transfrom 600ms ease-in;
+    -o-transition: transfrom 600ms ease-in;
+    color: white !important;
+}
+// font awesome
+.fa-github{
+    margin-right: 10px !important;
+}
+.gitbtn{
+    border-radius: 10% !important;
+}
+// media queries 
 
 @media screen and (max-width: 480px){
     #loadingImg{
