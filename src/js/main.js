@@ -11,7 +11,7 @@ window.addEventListener('load', ()=>{
 window.onload = function() {
     var img = document.getElementById('loadingImg')
     var desktopGif = '../../assets/loading.gif'
-    var mobileGif = '../../assets/mobileLoading.gif'
+    var mobileGif = '../../assets/m.gif'
 
         function loadGif(){
             if(window.innerWidth <= 480){

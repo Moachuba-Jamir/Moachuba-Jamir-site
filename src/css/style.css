@@ -87,7 +87,7 @@ html::-webkit-scrollbar {
   height: 27rem !important;
   width: 20rem;
   margin: 3% !important;
-  border: 2px solid #740374 !important;
+  border: 2px solid #520152 !important;
   box-shadow: #9d0173 0px 8px 15px !important;
   transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
@@ -113,10 +113,10 @@ html::-webkit-scrollbar {
   -o-transform: scale(1.09);
 }
 
-.projectHeading h1 {
+h1 {
   text-align: center;
   padding-bottom: 2% !important;
-  color: #d6d6d6;
+  color: #ffffff !important;
   font-family: "Protest Guerrilla", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -149,6 +149,47 @@ html::-webkit-scrollbar {
   border-radius: 10% !important;
 }
 
+.aboutContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.aboutContainer p {
+  font-size: 20px;
+  color: #880068 !important;
+  padding: 1.8% !important;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.myImage {
+  height: 100% !important;
+  width: 30%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.realContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgContainer, .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 480px) {
   #loadingImg {
     width: 100%; /* Set the width to fill the container */
@@ -159,5 +200,20 @@ html::-webkit-scrollbar {
   }
   #loading {
     background: #090909;
+  }
+  h1 {
+    font-size: 3em !important;
+  }
+  .myAbout p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .myAbout {
+    height: 100%;
+    width: 100%;
+  }
+  .myImage {
+    height: 100% !important;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
