@@ -4,7 +4,7 @@ const loader =  document.getElementById('loading')
 window.addEventListener('load', ()=>{
     setTimeout(()=>{
         loader.style.display ="none";
-    }, 2000);
+    }, 4000);
 });
 
 // setting up loading animations on multiple devices
@@ -29,8 +29,7 @@ window.onload = function() {
 
 // scrollintoview 
 function viewEl(el){
-    if(el){
-        var item = document.getElementById(el);
-        item.scrollIntoView({behavior:'smooth', block:'start', inline: 'nearest'});
-    }
+    var item = document.getElementById(el);
+        item.scrollIntoView({behavior:'smooth', block:'end', inline: 'center'});
+        item = null;
 }

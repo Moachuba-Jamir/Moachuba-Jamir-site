@@ -16,6 +16,16 @@ body .nav-container {
 body .nav-item {
   font-size: 1.4em;
   color: white;
+  cursor: pointer;
+  transition: all 300ms ease-in-out !important;
+  -webkit-transition: all 300ms ease-in-out !important;
+  -moz-transition: all 300ms ease-in-out !important;
+  -ms-transition: all 300ms ease-in-out !important;
+  -o-transition: all 300ms ease-in-out !important;
+}
+body .nav-item:hover {
+  font-size: 26px;
+  color: #880068;
 }
 body .navbar {
   background-color: rgb(6, 6, 7);
@@ -81,6 +91,11 @@ html::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
 }
 
 .card {
@@ -125,7 +140,6 @@ h1 {
 
 .card-body, .card-title, .card-text {
   background-color: white !important;
-  border-radius: 5%;
   padding: 2% !important;
 }
 
@@ -158,7 +172,7 @@ h1 {
 .aboutContainer p {
   font-size: 20px;
   color: #880068 !important;
-  padding: 1.8% !important;
+  padding: 1% !important;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
@@ -188,6 +202,83 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contactTitle {
+  padding-top: 3% !important;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2% !important;
+  color: #ffffff !important;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem !important;
+}
+
+h3 {
+  text-align: center;
+  padding-bottom: 2% !important;
+  color: #ffffff !important;
+  font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem !important;
+}
+
+.contacts {
+  padding-top: 2% !important;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-linkedin {
+  background-color: #00b3ff;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  margin-right: 1% !important;
+  padding: 1px !important;
+}
+
+.fa-square-whatsapp {
+  background-color: #009e61;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  margin-right: 1% !important;
+  padding: 1px !important;
+}
+
+.fa-square-github {
+  background-color: #980182;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  padding: 1px !important;
+}
+
+.chat a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.iconContainer a {
+  text-decoration: none !important;
+  padding-right: 1% !important;
+  color: inherit;
 }
 
 @media screen and (max-width: 480px) {

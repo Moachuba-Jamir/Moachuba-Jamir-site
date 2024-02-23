@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- git main is the default  -->
@@ -39,9 +38,9 @@
                 <span class="navbar">
                   <ul class="navbar-nav mb-1 mb-lg-0">
                     <a class="right pe-5 nav-link active" aria-current="page"  href="#"><li onclick="viewEl('nav')" class="nav-item">Home</li></a>
-                    <a class="right pe-5" href="#"><li  onclick="viewEl('myProjects')" class="nav-item">Projects</li></a>
-                   <a class="right pe-5" href="#"> <li onclick="viewEl('about')"       class="nav-item">three</li></a>
-                   <a class="right pe-5" href="#"> <li onclick="viewEl('contact')"  class="nav-item">four</li></a>
+                    <li  onclick="viewEl('myProjects')" class="nav-item pe-5">Projects</li>
+                    <li  onclick="viewEl('about')"       class="nav-item pe-5">About</li>
+                    <li  onclick="viewEl('contact')"     class="nav-item pe-5">contact</li>
                   </ul>
                 </span>
               </div>
@@ -96,9 +95,9 @@
 
       <!-- about section -->
       <div class="aboutHeading">
-        <h1>About</h1>
+        <h2>Hey There</h2>
       </div>
-      <div class="container-fluid aboutContainer">
+      <div  id="about" class="container-fluid aboutContainer">
     
           <div class="col-9 description">
             <p style="color: white;"> this is the first container Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos nihil ipsam a quam illum veritatis dolorem. Id consequuntur iusto non mollitia, fugiat minus voluptatem animi inventore in, deleniti suscipit itaque accusamus temporibus ut omnis hic est nostrum laborum porro.</p>
@@ -107,10 +106,20 @@
           <div class="col-6 imgContainer">
             <img  class="myImage" src="../../assets/images/moa4.JPG" alt="" srcset="">
           </div>
-        </div>
+       
 
-    
-    </div>
+
+
+          <div id="contact" class="col-12 contacts">
+            <h3> I'm always up for a chat</h3>
+            <p class="chat"><a href="mailto:jeremycarryme12@gmail.com" target="_blank">Pop me an email here </a>,  or reach out to me on social media</p>
+            <div class=" container-fluid iconContainer">
+              <a href="#"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+              <a href="#"><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+              <a style= "text-decoration:none !important;" href="#"><i class="fa-brands fa-square-github fa-2x"></i></a>
+            </div>
+          </div>
+        </div>
 
 
     <script  src="../js/main.js"></script>
