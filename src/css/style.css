@@ -1,0 +1,53 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  scroll-behavior: smooth;
+}
+
+body .splineContainer {
+  position: relative;
+  height: 100vh;
+}
+body .nav-container {
+  margin: 0.8% !important;
+}
+body .nav-item {
+  font-size: 1.4em;
+  color: white;
+}
+body .navbar {
+  background-color: rgb(6, 6, 7);
+  margin-top: 3%;
+}
+body .myName {
+  color: white;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.splineContainer {
+  scroll-snap-type: y mandatory;
+}
+
+.projects {
+  scroll-snap-align: start;
+}
+
+@media screen and (max-width: 480px) {
+  .smallSpline {
+    display: block;
+  }
+  .bigSpline {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bigSpline {
+    display: block;
+  }
+  .smallSpline {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

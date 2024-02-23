@@ -1,0 +1,74 @@
+// global styling 
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+    scroll-behavior:smooth;
+}
+
+
+// Global varaibles 
+$base-color: #ffffff;
+
+body{
+    .splineContainer{
+        position: relative;
+        height: 100vh;
+    }
+
+
+    .nav-container{
+        margin: 0.8% !important;
+    }
+    
+    .nav-item{
+        font-size: 1.4em ;
+        color: white;
+    }
+    .navbar{
+        background-color: rgb(6, 6,7);
+        margin-top: 3%;
+    }
+    .myName{
+        color: white
+    }
+}
+
+html::-webkit-scrollbar{
+    display: none;
+}
+
+.splineContainer {
+    scroll-snap-type: y mandatory;
+  }
+  
+.projects{
+    scroll-snap-align: start;
+}
+
+  @media screen and (max-width: 480px){
+    .smallSpline{
+        display: block;
+    }
+    .bigSpline{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 1400px){
+    .bigSpline{
+        display: block;
+    }
+    .smallSpline{
+        display: none;
+    }
+  }
+
+#loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: black;
+}
