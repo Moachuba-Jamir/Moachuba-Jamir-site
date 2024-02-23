@@ -2,7 +2,7 @@
   padding: 0 !important;
   margin: 0 !important;
   scroll-behavior: smooth;
-  background-color: black;
+  background-color: rgb(9, 9, 9);
 }
 
 body .splineContainer {

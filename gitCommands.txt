@@ -22,4 +22,15 @@ now we push it to the head of the origin
 
 git push origin head 
 
+to merge with the main or master branch 
+
+go to main 
+    git checkout main 
+    git merge addedSpinner
+    
+    for now go the github site and compare and pull 
+    next we merge 
+
+
+
 
