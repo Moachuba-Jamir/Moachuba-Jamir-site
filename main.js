@@ -14,10 +14,10 @@ window.onload = function() {
     var splinePhone = document.getElementById('mobileSpline')
 
         function loadGif(){
-            if(window.innerWidth <= 600){
+            if(window.innerWidth <= 500){
                 img.src = mobileGif;
             }
-            else{
+            elseif(window.innerWidth > 500){
                 img.src = desktopGif;
                 splinePhone.style.display = "none";
             }
