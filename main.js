@@ -17,7 +17,7 @@ window.onload = function() {
             if(window.innerWidth <= 500){
                 img.src = mobileGif;
             }
-            elseif(window.innerWidth > 500){
+            else{
                 img.src = desktopGif;
                 splinePhone.style.display = "none";
             }
