@@ -11,13 +11,16 @@ window.onload = function() {
     var img = document.getElementById('loadingImg')
     var desktopGif = 'assets/loading.gif';
     var mobileGif = 'assets/m.gif';
+    var splinePhone = document.getElementById('mobileSpline')
 
         function loadGif(){
             if(window.innerWidth <= 600){
                 img.src = mobileGif;
+                splinePhone.style.display = "block";
             }
             else{
                 img.src = desktopGif;
+                splinePhone.style.display = "none";
             }
         }
     loadGif();
