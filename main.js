@@ -1,1 +1,61 @@
-const loader=document.getElementById("loading");function viewEl(e){document.getElementById(e).scrollIntoView({behavior:"smooth",block:"end",inline:"center"})}window.addEventListener("load",()=>{setTimeout(()=>{loader.style.display="none"},3000)}),window.onload=function(){var e=document.getElementById("loadingImg");function n(){window.innerWidth<=600?e.src="assets/m.gif":e.src="assets/loading.gif"}n(),window.onresize=function(){n()}},AOS.init({disable:!1,startEvent:"DOMContentLoaded",initClassName:"aos-init",animatedClassName:"aos-animate",useClassNames:!1,disableMutationObserver:!1,debounceDelay:50,throttleDelay:99,offset:120,delay:0,duration:400,easing:"ease-in-out",once:!1,mirror:!0,anchorPlacement:"top-bottom"});
+const loader =  document.getElementById('loading')
+
+window.addEventListener('load', ()=>{
+    setTimeout(()=>{
+        loader.style.display ="none";
+    }, 110);
+});
+
+// setting up loading animations on multiple devices
+window.onload = function() {
+    var img = document.getElementById('loadingImg')
+    var desktopGif = 'assets/loading.gif';
+    var mobileGif = 'assets/m.gif';
+    var splinePhone = document.getElementById('mobileSpline')
+
+        function loadGif(){
+            if(window.innerWidth <= 600){
+                img.src = mobileGif;
+            }
+            else{
+                img.src = desktopGif;
+                splinePhone.style.display = "none";
+            }
+        }
+    loadGif();
+    window.onresize = function(){
+        loadGif();
+    }
+};
+
+
+// scrollintoview 
+function viewEl(el){
+    var item = document.getElementById(el);
+        item.scrollIntoView({behavior:'smooth', block:'end', inline: 'center'});
+        item = null;
+}
+
+// scroll animation 
+AOS.init({
+    // Global settings:
+    disable: false,
+    startEvent: 'DOMContentLoaded', 
+    initClassName: 'aos-init',
+    animatedClassName: 'aos-animate', 
+    useClassNames: false, 
+    disableMutationObserver: false, 
+    debounceDelay: 50, 
+    throttleDelay: 99, 
+    
+  
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, 
+    delay: 0,
+    duration: 400, 
+    easing: 'ease-in-out', 
+    once: false, 
+    mirror: true, 
+    anchorPlacement: 'top-bottom',
+  
+  });
