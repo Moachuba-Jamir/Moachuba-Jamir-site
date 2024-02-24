@@ -8,13 +8,11 @@
 <link rel=stylesheet href=style.css>
 <link rel=stylesheet type=text/css href=./node_modules/bootstrap/dist/css/bootstrap.min.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
-<script type=module src=https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js></script>
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<script defer type=module src=https://unpkg.com/@splinetool/viewer@1.0.53/build/spline-viewer.js></script>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel=stylesheet>
 <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel=stylesheet>
-<link rel=stylesheet href=./node_modules/aos/dist/aos.css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css />
-<script src=https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3/dist/aos.min.js"></script>
 </head>
 <body>
 <div id=loading class=container-fluid>
@@ -83,7 +81,7 @@
 <p data-aos=flip-down data-aos-duration=500 data-aos-easing=ease-in style=color:white> this is the first container Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos nihil ipsam a quam illum veritatis dolorem. Id consequuntur iusto non mollitia, fugiat minus voluptatem animi inventore in, deleniti suscipit itaque accusamus temporibus ut omnis hic est nostrum laborum porro.</p>
 </div>
 <div id=about class="col-6 imgContainer">
-<img data-aos=zoom-in data-aos-duration=700 class=myImage src=assets/images/moa4.JPG alt srcset>
+<img data-aos=zoom-in data-aos-duration=700 class=myImage src="assets/optimised/moa4.webp" alt srcset>
 </div>
 </div>
 </div>
@@ -111,6 +109,6 @@
 </div>
 <hr><hr>
 <script src=main.js></script>
-<script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+<script defer src=./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js></script>
 </body>
 </html>
