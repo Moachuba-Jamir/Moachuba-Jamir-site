@@ -7,10 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Moachuba-Jamir",
   "license": "ISC",
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.3.3"
   }
 }
