@@ -431,3 +431,8 @@ hr {
   font-style: normal;
   font-size: 1.3rem !important;
 }
+
+.socialicons{
+  height: 30px;
+  width: 30px;
+}
