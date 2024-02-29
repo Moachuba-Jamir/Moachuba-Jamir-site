@@ -1,0 +1,1024 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0 user-scalable=no">
+<title>Moachuba Jamir</title>
+<link rel=stylesheet type=text/css href=./node_modules/bootstrap/dist/css/bootstrap.min.css>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3/dist/aos.min.js"></script>
+<style>
+  * {
+    padding: 0 !important;
+    margin: 0 !important;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: #090909;
+  }
+  #mobile{
+    display: none;
+  }
+  .mainContainer{
+    display: none;
+  }
+
+  @font-face {
+    font-family: dosis;
+    src: url('assets/fonts/Dosis-VariableFont_wght.ttf');
+  }
+  @font-face {
+    font-family: fre;
+    src: url('assets/fonts/FrederickatheGreat-Regular.ttf');
+  }
+  
+  .socialIcons{
+    height: 30px;
+    width: 30px;
+    transition: all 200ms ease-in-out;
+  }
+  .socialIcons:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+
+  strong{
+    transition: all 200ms ease-in-out;
+  }
+  strong:hover{
+    color: #006f57;
+  }
+  .myMail {
+    background: #fde8c3 !important;
+    height: 300px;
+    width: 300px;
+  }
+  .software{
+    color: #fde8c3;
+    
+  }
+  body .splineContainer {
+    position: relative;
+    height: 100vh;
+    background: rgb(9, 9, 9);
+  }
+  body .nav-container {
+    margin: 0.8% !important;
+  }
+  .nav-container a{
+    text-decoration: none;
+    color: rgb(240, 222, 186) ;
+    margin-right: 1% !important;
+  }
+  .nav-container img{
+    height: 25px;
+    width: 25px;
+  }
+  body .nav-item {
+    font-size: 1.4em;
+    color: rgb(240, 222, 186);
+    cursor: pointer;
+    transition: all 300ms ease-in-out !important;
+    -webkit-transition: all 300ms ease-in-out !important;
+    -moz-transition: all 300ms ease-in-out !important;
+    -ms-transition: all 300ms ease-in-out !important;
+    -o-transition: all 300ms ease-in-out !important;
+    font-family: 'dosis';
+  }
+  body .nav-item:hover {
+    font-size: 26px;
+    color: #880068;
+  }
+  body .navbar {
+    margin-top: 3%;
+  }
+  
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .splineContainer {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .projects {
+    scroll-snap-align: start;
+    padding-block: 5% !important;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #dbdcd7 , #016264 59%, #76024a 71%, #430036 84%, #0f0f0f 100%);
+}
+  .card1 {
+    height: 25rem !important;
+    width: 18rem;
+    margin: 3% !important;
+    border: 2px solid #520152 !important;
+    box-shadow: #9d0173 0px 8px 15px !important;
+    transition: all 100ms ease-in-out;
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    cursor: pointer;
+  }
+  #splineDesk{
+    margin-top: 0;
+  }
+
+
+  
+  .btn1 {
+    margin: 1% 1% 0% -4% !important;
+    padding: 2% !important;
+    background: #1d1d1d !important;
+    transition: all 100ms ease-in-out !important;
+    -webkit-transition: all 450ms ease-in-out !important;
+    -moz-transition: all 450ms ease-in-out !important;
+    -ms-transition: all 450ms ease-in-out !important;
+    -o-transition: all 450ms ease-in-out !important;
+    color: white !important;
+    height:40px;
+    width: 100px;
+  }
+  .card1:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    border: 2px inset white;
+    box-shadow: rgba(238, 238, 238, 0.19) 0px 10px 20px, rgba(255, 255, 255, 0.23) 0px 26px 86px !important;
+  }
+  
+  .card1:hover .btn1 {
+    transform: scale(1.09);
+    -webkit-transform: scale(1.09);
+    -moz-transform: scale(1.09);
+    -ms-transform: scale(1.09);
+    -o-transform: scale(1.09);
+    color: #880068 !important;
+  }
+
+  .line{
+    height: 1px;
+    width: 20%;
+    background-color: #880068!important;
+  }
+
+
+  h1 {
+    text-align: center;
+    padding-bottom: 2% !important;
+    color: #fde8c3 !important;
+    font-family: "fre";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 4rem !important;
+  }
+  
+  .card1-body, .card1-title, .card1-text {
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%) !important;
+    background-blend-mode: screen !important;
+    padding: 2% !important;
+  }
+  
+  .fa-github {
+    margin-right: 10px !important;
+  }
+  
+  .gitbtn {
+    border-radius: 10% !important;
+  }
+  
+  .aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .aboutContainer p {
+    font-size: 20px;
+    color: #880068 !important;
+    padding: 1% !important;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+  }
+  
+  .myImage {
+    height: 100% !important;
+    width: 30%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .realContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .imgContainer, .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  h2 {
+    text-align: center;
+    padding-bottom: 2% !important;
+    color: #fde8c3 !important;
+    font-family: "fre";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem !important;
+  }
+  .proLink{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%) !important;
+  }
+  
+  h3 {
+    text-align: center;
+    padding-bottom: 0.6% !important;
+    color: #fde8c3 !important;
+    font-family: "fre";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem !important;
+  }
+  
+  .fa-linkedin-in {
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    margin-right: 1% !important;
+    padding: 1px !important;
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: #e2ebff;
+    text-align: center;
+    padding-right: 7% !important;
+  }
+  
+  i {
+    font-size: 30px;
+  }
+  
+  .icons {
+    margin-top: 5%;
+    padding-top: 5% !important;
+  }
+  
+  .fa-square-whatsapp {
+    background-color: #009e61;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    margin-right: 1% !important;
+    padding: 1px !important;
+  }
+  
+  .fa-square-github {
+    background-color: #980182;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 1px !important;
+  }
+  
+  .chat a {
+    text-decoration: none !important;
+    color: inherit;
+  }
+  
+  .iconContainer a {
+    text-decoration: none !important;
+    padding-right: 1% !important;
+    color: inherit;
+  }
+  
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contacts {
+    height: 100%;
+    width: 100%;
+    margin: 3% !important;
+    padding: 2% !important;
+    margin-left: 10% !important;
+  }
+  
+  .card2-body, .card2-title, .card2-text {
+    background: #090909 !important;
+    text-align: center;
+    color: #fde8c3 !important;
+  }
+  
+  .card2-title a {
+    text-decoration: none !important;
+    color: inherit;
+    background-color: inherit !important;
+  }
+  
+  .card2-body {
+    margin-top: 5% !important;
+  }
+  
+  .aboutSection {
+    padding-bottom: 3% !important;
+    margin-top: 3% !important;
+  }
+  
+  .contact {
+    padding-bottom: 10% !important;
+  }
+  
+  .spline2 {
+    margin-top: 6% !important;
+    height: 450px;
+  }
+  
+  .card2-body {
+    height: 400px;
+  }
+
+  
+  hr {
+    height: 1px !important;
+    border-top: 1px solid #230023 !important;
+  }
+  
+  .card2-text a {
+    text-decoration: none !important;
+    color: #880068 !important;
+  }
+  
+  .card2-text em {
+    font-size: large;
+  }
+  
+  .card2-text p {
+    font-size: larger;
+  }
+  
+  .card2-text {
+    padding-top: 2% !important;
+  }
+  
+  .fa-brands {
+    transition: all 500ms ease-in-out !important;
+    -webkit-transition: all 100ms ease-in-out !important;
+    -moz-transition: all 500ms ease-in-out !important;
+    -ms-transition: all 500ms ease-in-out !important;
+    -o-transition: all 500ms ease-in-out !important;
+  }
+  
+  .fa-brands:hover {
+    transform: scale(1.2) !important;
+    -webkit-transform: scale(1.2) !important;
+    -moz-transform: scale(1.2) !important;
+    -ms-transform: scale(1.2) !important;
+    -o-transform: scale(1.2) !important;
+  }
+  
+  .linkedIn {
+    height: 20px;
+    width: 20px;
+  }
+ 
+
+  
+ 
+  .myName{
+    text-decoration: none;
+    color: #fde8c3 !important;
+    font-family: "fre";
+    font-weight:lighter;
+    font-size: 1.5rem !important;
+  }
+  #loading {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; 
+    background: #090909;
+}
+
+
+#loading img {
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+@font-face {
+  font-family: protest;
+  src: url('assets/fonts/ProtestRevolution-Regular.ttf');
+}
+
+
+.skillContainer{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.myUni{
+  font-size: 25px;
+  color: #860363 !important;
+  margin-top: -1.7% !important
+
+}
+.myUni a{
+  text-decoration: none;
+  color: inherit;
+  transition: all 300ms ease-in-out !important;
+}
+
+.myUni:hover{
+  cursor: pointer;
+}
+
+#skills{
+  display: inline-block !important;
+  background-color: #dadada !important;
+  height: 50px !important;
+  width: 100px !important;
+  text-align: center;
+}
+.skillContainer{
+  margin-top: 1% !important;
+}
+.skillHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2% !important;
+}
+.skillSet{
+  height: 40px;
+  width: 180px;
+  background-color:#d7d7d7;
+  color: rgb(0, 0, 0);
+  border-radius: 12px;
+  border: none;
+  font-family:'dosis' !important;
+  letter-spacing: 0.1cm;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 2%;
+}
+.nav-item a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 40px;
+  width: 100px !important;
+  background-color: #360120;
+  border-radius: 10% ;
+  text-align: center;
+}
+.nav-item a:hover{
+  color: white;
+  transform: scale(1);
+}
+
+.mySkills{
+  display: flex;
+  align-items: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2% !important;
+  border-bottom: 0.5px solid rgb(223, 223, 223);
+  padding-bottom: 1% !important; 
+}
+.mySkills button{
+  border-inline: 1px dashed #76024a;
+  border-bottom: 3px solid #76024a;
+  margin-inline: 2% !important;
+  margin-bottom: 2% !important;
+  transition: all 200ms ease-in-out;
+}
+.mySkills button:hover{
+  transform: scale(1.1);
+  border-bottom: 3px solid #cccccc;
+}
+.logos{
+  height: 30px;
+  width: 30px;
+  border-radius: 20%;
+  background: inherit;
+
+}
+.logobtn{
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  border: none;
+  font-family:'dosis';
+  letter-spacing: 0.1cm;
+  font-size: 20px;
+  margin-top: 3%;
+  padding-top: 1% !important;
+  padding-inline: 1% !important;
+  padding-bottom: 1% !important;
+}
+.skillLine{
+  height: 2px;
+  width: 40%;
+  background: #016264;
+}
+#first_name{
+  margin-top: 3% !important;
+}
+#message{
+  background: #e6e6e6 !important;
+  border-radius: 20px;
+  padding: 3% !important;
+  width: 70% !important;
+}
+input:focus, textarea:focus {
+  outline-color: #76024a;
+  outline-width: 2px; 
+}
+
+
+#first_name, #last_name, #email{
+  width: 80% !important;
+  background:#e6e6e6 !important;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin-bottom: 4% !important;
+  padding: 2% !important;
+  font-family: 'dosis';
+  font-weight: 600;
+}
+#sub{
+  background: #e6e6e6 !important;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'protest' !important;
+  letter-spacing: .6px;
+  color: #060606;
+  margin-top: 3% !important;
+}
+.message{
+  margin-top: 7% !important;
+  font-family: 'protest';
+}
+#message{
+  background: #e6e6e6 !important;
+  width:80%  !important;
+  height: 90px !important;
+  height: 40px;
+  border-radius: 10px;
+  font-family: 'dosis' !important;
+  letter-spacing: .6px;
+  color: #0e0e0e;
+  margin-top: 3% !important;
+  font-weight: 600;
+}
+ .myBca{
+  font-size: 25px !important;
+  color: rgb(221, 221, 221) !important;
+  font-family: 'dosis';
+  font-weight: 100;
+  margin-top: -1.9% !important;
+}
+#sub{
+  width: 150px;
+  text-align: center;
+  font-size: 1.3rem;
+  }
+  @media screen and (max-width: 480px) {
+    #loadingImg {
+      width: 100%; /* Set the width to fill the container */
+      height: auto; /* Let the height adjust proportionally */
+      max-width: 100%; /* Ensure the image doesn't exceed its original size */
+      -o-object-fit: contain;
+         object-fit: contain;
+    }
+    .dumplings{
+      font-size: 1.7rem !important;
+      padding-top: 5% !important;
+    }
+    .linkedtop, .gittop{
+      display: none;
+    }
+    #loading {
+      background: #090909;
+    }
+    .nav-item a{
+      display: inline;
+      text-decoration: none;
+      text-align: center;
+      background: inherit;
+    }
+    strong, em{
+      font-size: 3rem;
+      color: #860363;
+    }
+    .skillSet{
+      height: 30px;
+      width: 240px;
+      background-color:#d7d7d7;
+      color: rgb(0, 0, 0);
+      border-radius: 12px;
+      border: none;
+      font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      letter-spacing: 0.1cm;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 2%;
+    }
+    .hey{
+      margin-top: 8% !important;
+      font-size: 3.5rem !important;;
+    }
+    .mySkills{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5% !important;
+      border-bottom: 0.5px solid white;
+      padding-bottom: 6% !important; 
+    }
+    .mySkills button{
+      padding: 4% !important;
+      border-inline: 1px dashed #76024a;
+      border-bottom: 3px solid #76024a;
+      margin-top: 3% !important;
+      margin-inline: 4% !important;
+    }
+    .card1 {
+      height: 460px !important;
+      width: 290px !important;
+      padding-bottom: 5% !important;
+    }
+    .btn1 {
+      margin-top: 3% !important;
+    }
+    h1 {
+      font-size: 3em !important;
+    }
+    .myAbout p {
+      font-size: 18px;
+      text-align: left;
+    }
+    .myAbout {
+      height: 100%;
+      width: 100%;
+    }
+    .myImage {
+      height: 100% !important;
+      width: 100%;
+    }
+    .spline, .spline2{
+      display: none;
+    }
+    .contact {
+      padding-top: -10%;
+    }
+
+    .icons{
+      display: flex;
+      align-items: space-around;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .card2-body{
+     height: 270px !important ;
+    }
+    .card2-title{
+      margin-bottom: 1%;
+    }
+    #myForm{
+      padding-bottom: 15% !important;
+    }
+    .nav-item, .nav-link,
+    .collapse,  .navbar-light {
+    background-color:#230023 !important;
+    border: none !important;
+    border-width:5%!important;
+    padding-bottom: 3% !important;
+}
+.navbar{
+  border-bottom-left-radius: 10% !important;
+  border-bottom-right-radius: 10% !important;
+}
+#first_name, #email, #message{
+  width: 85% !important;
+}
+#message{
+  height: 100px;
+}
+.myUni{
+  font-size: 25px;
+  color: #860363 !important;
+  margin-top: -5% !important;
+  margin-bottom: 8% !important;
+
+}
+#sub{
+width: 200px;
+text-align: center;
+font-size: 1.3rem;
+}
+.myName{
+  font-size: 1.6rem !important;
+}
+.myName, .nav-container, .navbar{
+  background-color: #220022 !important;
+ }
+.nav-item{
+  padding: 7% !important;
+}
+  .mainBody h2{
+    text-align: center;
+    padding: 5% 3% 10% 3% !important;
+    color: #dadada !important;
+    font-size: 3.7rem !important;
+    font-weight: lighter;
+    font-family: protest !important;
+  }
+  .card1:hover {
+    transform: scale(1);
+  }
+
+  @font-face {
+    font-family: protest;
+    src: url('assets/fonts/ProtestRevolution-Regular.ttf');
+  }
+
+  .btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnContainer a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 1.6rem;
+    padding-inline: 4% !important;
+    padding-block: 2% !important;
+    border-inline: 1px dashed #76024a;
+    border-bottom: 3px solid #a2a2a2;
+    margin-top: 1% !important;
+    border-radius: 10px;
+  }
+  .resumeLine{
+    height: 1px;
+    width: 60%;
+    background: #016264;
+  }
+  .mybtn{
+    width: 120px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #a7a7a7 0%, #4d0130 100% );
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgba(255, 255, 255, 0.595);
+    padding: 0 32px;
+    border-radius: 6px;
+    color: #fff;
+    height: 48px;
+    font-size: 18px;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    :hover {
+        box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3c4fe0;
+        transform: translateY(-2px);
+    }
+    :active{
+        box-shadow: inset 0px 3px 7px #3c4fe0;
+        transform: translateY(2px);
+    }
+    
+  }
+  .btn3{
+    margin: 5%!important;
+    
+  }
+  .btn2{
+    margin: 0 !important;
+    margin-right: 5% !important;
+  }
+  html,body{
+    overflow-x: clip !important;
+  }
+
+  .line{
+    height: 1px;
+    width: 20px;
+    background-color: #880068!important;
+  }
+
+  .logo1{
+    height: 25px;
+    width: 25px;
+  }
+
+
+} 
+/*# sourceMappingURL=style.css.map */
+
+</style>
+</head>
+<body>
+  <div id="loading" class="container-fluid full-height">
+    <img src="assets/images/loading.gif" alt="">
+  </div>
+
+<div class="container-fluid full-height mainContainer">
+  <div class="container-fluid full-height splineContainer">
+    <nav id=nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <div class="container-fluid nav-container">
+    <a class=myName>Moachuba Jamir</a>
+    <a class="linked linkedtop" href=https://www.linkedin.com/in/moa-chuba-8744071b8/ ><img class="socialIcons " loading="lazy" src="assets/logos/linkedin.webp" alt="#">  </a>
+    <a class="git gittop" href=https://github.com/Moachuba-Jamir > <img class="socialIcons" loading="lazy"src="assets/logos/github.webp" alt="#"></a>
+    <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarText aria-controls=navbarText aria-expanded=false aria-label="Toggle navigation">
+    <span class=navbar-toggler-icon></span>
+    </button>
+    <div class="collapse navbar-collapse" id=navbarText>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    </ul>
+    <span class=navbar>
+    <ul class="navbar-nav mb-1 mb-lg-0">
+    <a class="right pe-5 nav-link active" aria-current=page href=#><li onclick="viewEl('nav')" class=nav-item>Home</li></a>
+    <li class="nav-item pe-5 "><a href="#">Resume</a></li>
+    <li onclick="viewEl('about')" class="nav-item pe-5">About</li>
+    <li onclick="viewEl('myProjects')" class="nav-item pe-5">Projects</li>
+    <li onclick="viewEl('contact')" class="nav-item pe-5">contact</li>
+    </ul>
+    </span>
+    </div>
+    </div>
+    </nav>
+    <spline-viewer id = "splineDesk" url=https://prod.spline.design/SH3TgthTT76qqKQJ/scene.splinecode></spline-viewer>
+    <!-- for mobile devices  -->
+    <div id="mobile" class="container-fluid full-height mobileContainer">
+      <h1 ></h1>
+      <div class="mainBody" style="padding-top:10% !important">
+        <h2 data-aos="flip-left" data-aos-duration="800">Hi, I'm Moachuba Jamir. <br> A <p data-aos="fade-left" data-aos-duration="8600" class="software" style="display: inline-block;">software</p> 
+          and <p data-aos="fade-right" data-aos-duration="2400" class="software" style="display: inline-block;">Web developer</p><p class="dumplings">
+            <em><</em> I may or may not have an obsession for dumplings🥟... <strong>/></strong>
+          </p></h2>
+        <div class="btnContainer">   
+          <div class="resumeLine" data-aos="fade-right" data-aos-duration="700"></div>            
+          <a data-aos="fade-up" data-aos-duration="900" href="https://www.google.com">Resumé</a>
+          <div class="resumeLine" data-aos="fade-left" data-aos-duration="700"></div>            
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid full-height aboutSection">
+      <div    class=aboutHeading>
+      <h2 data-aos="zoom-in-down" data-aos-duration=700 class="hey">Hey There!</h2>
+      </div>
+      <div class="container-fluid aboutContainer">
+      <div class="col-9 description">
+      <p data-aos=fade-left data-aos-duration=1000 data-aos-easing=ease-in style=color:white> this is the first container Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos nihil ipsam a quam illum veritatis dolorem. Id consequuntur iusto non mollitia, fugiat minus voluptatem animi inventore in, deleniti suscipit itaque accusamus temporibus ut omnis hic est nostrum laborum porro.</p>
+      </div>
+      <div  class="col-6 imgContainer">
+        <div class="line container-fluid" data-aos="fade-right" data-aos-duration="1000"></div>
+      <img  data-aos=zoom-in data-aos-duration=700 class=myImage loading="lazy" src="assets/logos/me.webp" alt srcset>
+      <div class="line container-fluid" data-aos="fade-left" data-aos-duration="1000"></div>
+      </div>
+      </div>
+      </div>
+      <div class="bca container-fluid">
+        <p  id=about class="myBca" style="text-align: center;">BCA Grad Student</p>
+        <br>
+        <p  class="mybca myUni" style="text-align: center;"><a href="https://www.iunagaland.edu.in/">ICFAI university Nagaland</a></p>
+      </div>
+
+      <div class="container-fluid skillContainer">
+        <div class="skillHeader container-fluid">
+          <div class="skillLine"></div>
+          <button class="skillSet" > <img  class="logos logo1" src="assets/logos/skills.webp" alt="">&nbspTech stack</button>
+          <div class="skillLine"></div>
+        </div>
+
+        <div class="mySkills container">
+          <button class="logobtn" data-aos="fade-right" data-aos-duration="800" ><img class="logos" src="assets/logos/html.webp" alt="html"> Html</button>
+          <button class="logobtn" data-aos="fade-right" data-aos-duration="800"  ><img class="logos" src="assets/logos/css.webp" alt="css"> Css</button>
+          <button class="logobtn" data-aos="fade-right" data-aos-duration="800"  ><img class="logos" src="assets/logos/sass.webp" alt="sass"> Sass</button>
+          <button class="logobtn" data-aos="fade-right" data-aos-duration="800"  ><img class="logos" src="assets/logos/js.webp" alt="js"> Javascript</button>
+          <button class="logobtn" data-aos="fade-left" data-aos-duration="800" ><img class="logos" src="assets/logos/python.webp" alt="py"> Python</button>
+          <button class="logobtn" data-aos="fade-left" data-aos-duration="800"  ><img class="logos" src="assets/logos/arduino1.webp" alt="arduino"> Arduino</button>
+          <button class="logobtn" data-aos="fade-left" data-aos-duration="800" ><img class="logos" src="assets/logos/nodejs.webp" alt="node"> Nodejs</button>
+          <button class="logobtn"data-aos="fade-left" data-aos-duration="800" ><img class="logos" src="assets/logos/git.webp" alt="Node"> Git</button>
+        </div>
+      </div>
+    
+    <div   id=myProjects  class="projects container-fluid full-height projectContainer">
+    <div class="projectHeading container-fluid">
+    <h1 data-aos=fade-right data-aos-duration=2000>My Projects</h1>
+    <div class="cardContainer full-height container-fluid">
+      <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+      <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
+      <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+      <h5 class="card-title card1-title">Card title</h5>
+      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
+        <div class="container proLink">
+          <a class='btn btn1' href='/src/project1'>Read more</a>
+          <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
+        </div>
+      </div>
+      </div>
+      <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+        <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
+        <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+        <h5 class="card-title card1-title">Card title</h5>
+        <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
+          <div class="container proLink">
+            <a class='btn btn1' href='/src/project2'>Read more</a>
+            <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
+          </div>
+        </div>
+        </div>
+        <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+          <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
+          <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+          <h5 class="card-title card1-title">Card title</h5>
+          <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
+            <div class="container proLink">
+              <a class='btn btn1' href='/src/project3'>Read more</a>
+              <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+ 
+    </div>
+    
+    <div id=contact class="contact container-fluid full-height">
+    <div class="card card2 mb-3" style=max-width:1000px;border:0>
+    <div class="row g-0">
+    <div class="col-md-6 hide">
+    <div class=card2-body>
+    <h3 class=card2-title data-aos="zoom-in-down" data-aos-duration="600">I'm always up for a chat!</h3>
+    <p class=card2-text><a href=mailto:jeremycarryme12@gmail.com><em><strong style="font-size:1.3rem; color:#76024a">Pop me a mail </strong></em></a>, or you can reach out to me through social media.
+    <div class=" icons">
+    <a class=linked href=https://www.linkedin.com/in/moa-chuba-8744071b8/ ><img class="socialIcons " loading="lazy" src="assets/logos/linkedin.webp" alt="#"> LinkedIn </a>
+    <a class=git href=https://github.com/Moachuba-Jamir > <img class="socialIcons" loading="lazy"src="assets/logos/github.webp" alt="#"> Github</a>
+    </div>
+    <div class="message container-fluid">
+      <h4>Send me a message...</h4>
+      <form
+       id="myForm"
+       action="https://script.google.com/macros/s/AKfycby2LTKS_Y2RqjLPNI7YhJ8xydZuAEJibjGZwi3aXn2K2YUE5CqL_KtEQrfkydiCXh-B/exec"
+       method="POST">
+
+        <input data-aos="fade-up" data-aos-duration="900" type="text" id="first_name" name="first_name" placeholder="Your Name"><br>
+        <input data-aos="fade-up" data-aos-duration="900" type="email" id="email" name="email" placeholder="email">
+        <textarea data-aos="zoom-in-up" data-aos-duration="700" id="message" name="message" rows="2" cols="30" placeholder="Message"></textarea><br>
+        
+        <input id="sub" type="submit" value="Submit">
+    </form>
+    </div>
+    </p>
+    </div>
+    </div>
+    <div class="col-md-6 spline2">
+    <spline-viewer url=https://prod.spline.design/zcUR7Ch6lx66gn3U/scene.splinecode></spline-viewer> 
+    </div>
+    </div>
+    </div>
+    </div>
+</div>
+<hr><hr>
+<script defer src=main.js></script>
+<script defer src=./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+</body>
+</html
