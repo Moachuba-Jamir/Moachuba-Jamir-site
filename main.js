@@ -17,7 +17,7 @@ if (window.innerWidth < 500) {
     loading.style.display = "none";
     main.style.display = "block";
     console.log("window is in desktop");
-  }, 4000);
+  }, 500);
 }
 function responsive() {
   const mobile = document.getElementById("mobile");
@@ -109,3 +109,4 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       );
     });
 });
+
