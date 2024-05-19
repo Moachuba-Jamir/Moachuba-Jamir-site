@@ -110,3 +110,9 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     });
 });
 
+document.getElementById("alertUser").addEventListener('click', () => {
+  setTimeout(() => {
+    alert("Download successfull! Hope to hear from you soon !");
+  }, 1000)
+});
+
