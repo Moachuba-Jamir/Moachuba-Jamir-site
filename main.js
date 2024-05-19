@@ -17,7 +17,7 @@ if (window.innerWidth < 500) {
     loading.style.display = "none";
     main.style.display = "block";
     console.log("window is in desktop");
-  }, 300);
+  }, 4000);
 }
 function responsive() {
   const mobile = document.getElementById("mobile");
