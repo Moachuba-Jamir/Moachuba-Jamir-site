@@ -120,16 +120,19 @@
     border: 2px solid #520152 !important;
     box-shadow: #9d0173 0px 8px 15px !important;
     transition: all 100ms ease-in-out;
-    -webkit-transition: all 100ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
     cursor: pointer;
   }
   #splineDesk{
     margin-top: 0;
   }
 
+  .personal{
+    margin-bottom:45px !important;
+  }
+
+  .ai{
+       margin-bottom:35px !important;
+  }
 
   
   .btn1 {
@@ -852,7 +855,13 @@ font-size: 1.3rem;
   }
 
 
+
+
 } 
+
+.card{
+  transition: all 200ms ease-in;
+}
 /*# sourceMappingURL=style.css.map */
 
 </style>
@@ -867,7 +876,7 @@ font-size: 1.3rem;
     <nav id=nav class="navbar fixed-top navbar-expand-lg navbar-light">
     <div class="container-fluid nav-container">
     <a class=myName>Moachuba Jamir</a>
-    <a class="linked linkedtop" href=https://www.linkedin.com/in/moa-chuba-8744071b8/ ><img class="socialIcons " loading="lazy" src="assets/logos/linkedin.webp" alt="#">  </a>
+    <a class="linked linkedtop" href="https://www.linkedin.com/in/moachuba/" ><img class="socialIcons " loading="lazy" src="assets/logos/linkedin.webp" alt="#">  </a>
     <a class="git gittop" href=https://github.com/Moachuba-Jamir > <img class="socialIcons" loading="lazy"src="assets/logos/github.webp" alt="#"></a>
     <button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarText aria-controls=navbarText aria-expanded=false aria-label="Toggle navigation">
     <span class=navbar-toggler-icon></span>
@@ -951,7 +960,7 @@ font-size: 1.3rem;
     <div class="cardContainer full-height container-fluid">
 
       <!-- projecst 1  -->
-      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=500>
       <img src="assets/images/arcadepng.png" style="background-color: #d3d3d3;"  class="card-img-top p-1" alt=projectImage>
       <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
       <h5 class="card-title card1-title">Arcade Basketball game</h5>
@@ -965,12 +974,12 @@ font-size: 1.3rem;
       </div>
 
       <!-- project 2  -->
-      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
-      <img src="assets/images/website.png" style="background-color: #d3d3d3;"  class="card-img-top pb-4" alt=projectImage>
-      <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
-      <h5 class="card-title card1-title">Personal Portfolio</h5>
-      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Html / Css, JS &nbsp,bootstrap </small> </h5>
-      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000> Developed a comprehensive personal portfolio that showcases my skills, projects, and experiences in software and web development. It offers a detailed outlook on the skills I have acquired.
+      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=500>
+      <img src="assets/images/website.png" style="background-color: #d3d3d3;"  class="card-img-top" alt=projectImage>
+      <div class="card1-body card-body " data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+      <h5 class="card-title card1-title ">Personal Portfolio</h5>
+      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Html / Css, JS &nbsp,bootstrap &nbsp </small> </h5>
+      <p class="card-text card1-text personal" data-aos=zoom-in-right data-aos-duration=1000> Developed a comprehensive personal portfolio that showcases my skills, projects, and experiences in software and web development..
   </p>
         <div class="container proLink">
           <a href="https://github.com/Moachuba-Jamir/Moachuba-Jamir-site.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
@@ -979,15 +988,15 @@ font-size: 1.3rem;
       </div>
 
         <!-- project 3 -->
-         <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
-      <img src="assets/images/objectdetection.webp" style="background-color: #d3d3d3;"  class="card-img-top pb-4" alt=projectImage>
+         <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=500>
+      <img src="assets/images/objectdetection.webp" style="background-color: #d3d3d3;"  class="card-img-top" alt=projectImage>
       <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
       <h5 class="card-title card1-title">AI object detection</h5>
-      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Python </small> </h5>
-      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000> Programmed a basic AI object detection tool that uses a webcam to detect and distinguish between objects. 
+      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Python &nbsp </small> </h5>
+      <p class="card-text card1-text ai" data-aos=zoom-in-right data-aos-duration=1000> Programmed a basic AI object detection tool that uses a webcam to detect and distinguish between objects. 
   </p>
         <div class="container proLink">
-          <a href="https://github.com/Moachuba-Jamir/Moachuba-Jamir-site.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
+          <a href="https://github.com/Moachuba-Jamir/ObjectDetectionUsingPython.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
         </div>
       </div>
       </div>
