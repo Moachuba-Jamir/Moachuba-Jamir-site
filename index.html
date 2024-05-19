@@ -7,7 +7,7 @@
 <title>Moachuba Jamir</title>
 <link rel=stylesheet type=text/css href=./node_modules/bootstrap/dist/css/bootstrap.min.css>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3/dist/aos.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/aos@2.3/dist/aos.min.js"></script>
 <style>
   * {
     padding: 0 !important;
@@ -662,6 +662,9 @@ input:focus, textarea:focus {
       margin-top: 8% !important;
       font-size: 3.5rem !important;;
     }
+    .myresume{
+      display: none;
+    }
     .mySkills{
       display: flex;
       align-items: center;
@@ -732,6 +735,7 @@ input:focus, textarea:focus {
 .navbar{
   border-bottom-left-radius: 10% !important;
   border-bottom-right-radius: 10% !important;
+  opacity: .8 !important;
 }
 #first_name, #email, #message{
   width: 85% !important;
@@ -874,7 +878,8 @@ font-size: 1.3rem;
     <span class=navbar>
     <ul class="navbar-nav mb-1 mb-lg-0">
     <a class="right pe-5 nav-link active" aria-current=page href=#><li onclick="viewEl('nav')" class=nav-item>Home</li></a>
-    <li class="nav-item pe-5 "><a href="#">Resume</a></li>
+    <li class="nav-item pe-5 myresume"><a href="assets/resume/MoachubaJamirResume.pdf" download="MoachubaJamir.pdf">Resume</a></li>
+    
     <li onclick="viewEl('about')" class="nav-item pe-5">About</li>
     <li onclick="viewEl('myProjects')" class="nav-item pe-5">Projects</li>
     <li onclick="viewEl('contact')" class="nav-item pe-5">contact</li>
@@ -894,21 +899,21 @@ font-size: 1.3rem;
           </p></h2>
         <div class="btnContainer">   
           <div class="resumeLine" data-aos="fade-right" data-aos-duration="700"></div>            
-          <a data-aos="fade-up" data-aos-duration="900" href="https://www.google.com">Resumé</a>
+          <a data-aos="fade-up" data-aos-duration="900" href="assets/resume/MoachubaJamirResume.pdf" download="MoachubaJamir.pdf">Resume</a>
           <div class="resumeLine" data-aos="fade-left" data-aos-duration="700"></div>            
         </div>
       </div>
     </div>
 
-    <div class="container-fluid full-height aboutSection">
+    <div class="container-fluid full-height aboutSection " >
       <div    class=aboutHeading>
       <h2 data-aos="zoom-in-down" data-aos-duration=700 class="hey">Hey There!</h2>
       </div>
       <div class="container-fluid aboutContainer">
       <div class="col-9 description">
-      <p data-aos=fade-left data-aos-duration=1000 data-aos-easing=ease-in style=color:white> this is the first container Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos nihil ipsam a quam illum veritatis dolorem. Id consequuntur iusto non mollitia, fugiat minus voluptatem animi inventore in, deleniti suscipit itaque accusamus temporibus ut omnis hic est nostrum laborum porro.</p>
+      <p data-aos=fade-left data-aos-duration=1000 data-aos-easing=ease-in style=color:white> I’m Chuba, a software and web developer with a passion for technology and innovation. I have experience in creating efficient applications and websites using various programming languages and frameworks. I love exploring new tech trends, contributing to open-source projects, and continuously expanding my skills. Let’s connect and create something amazing together!</p>
       </div>
-      <div  class="col-6 imgContainer">
+      <div id=about  class="col-6 imgContainer">
         <div class="line container-fluid" data-aos="fade-right" data-aos-duration="1000"></div>
       <img  data-aos=zoom-in data-aos-duration=700 class=myImage loading="lazy" src="assets/logos/me.webp" alt srcset>
       <div class="line container-fluid" data-aos="fade-left" data-aos-duration="1000"></div>
@@ -916,7 +921,7 @@ font-size: 1.3rem;
       </div>
       </div>
       <div class="bca container-fluid">
-        <p  id=about class="myBca" style="text-align: center;">BCA Grad Student</p>
+        <p   class="myBca" style="text-align: center;">BCA Grad Student</p>
         <br>
         <p  class="mybca myUni" style="text-align: center;"><a href="https://www.iunagaland.edu.in/">ICFAI university Nagaland</a></p>
       </div>
@@ -944,39 +949,49 @@ font-size: 1.3rem;
     <div class="projectHeading container-fluid">
     <h1 data-aos=fade-right data-aos-duration=2000>My Projects</h1>
     <div class="cardContainer full-height container-fluid">
-      <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
-      <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
+
+      <!-- projecst 1  -->
+      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+      <img src="assets/images/arcadepng.png" style="background-color: #d3d3d3;"  class="card-img-top p-1" alt=projectImage>
       <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
-      <h5 class="card-title card1-title">Card title</h5>
-      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
+      <h5 class="card-title card1-title">Arcade Basketball game</h5>
+      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp C++, Node js, Html / Css, JS &nbsp </small> </h5>
+      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>A game using IoTs like IR sensors Arduinos & swithes, to create an arcade-style basketball game. A project that devels into communication protocols and IOT integrations. </p>
         <div class="container proLink">
-          <a class='btn btn1' href='/src/project1'>Read more</a>
-          <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
+          <a class='btn btn1' href='https://tribalbeats2023.my.canva.site/basketballarcade-game'>Read more</a>
+          <a href="https://github.com/Moachuba-Jamir/BasketBallArcadeGame.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
         </div>
       </div>
       </div>
-      <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
-        <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
-        <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
-        <h5 class="card-title card1-title">Card title</h5>
-        <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
-          <div class="container proLink">
-            <a class='btn btn1' href='/src/project2'>Read more</a>
-            <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
-          </div>
+
+      <!-- project 2  -->
+      <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+      <img src="assets/images/website.png" style="background-color: #d3d3d3;"  class="card-img-top pb-4" alt=projectImage>
+      <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+      <h5 class="card-title card1-title">Personal Portfolio</h5>
+      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Html / Css, JS &nbsp,bootstrap </small> </h5>
+      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000> Developed a comprehensive personal portfolio that showcases my skills, projects, and experiences in software and web development. It offers a detailed outlook on the skills I have acquired.
+  </p>
+        <div class="container proLink">
+          <a href="https://github.com/Moachuba-Jamir/Moachuba-Jamir-site.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
         </div>
+      </div>
+      </div>
+
+        <!-- project 3 -->
+         <div class="card card1"  data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
+      <img src="assets/images/objectdetection.webp" style="background-color: #d3d3d3;"  class="card-img-top pb-4" alt=projectImage>
+      <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
+      <h5 class="card-title card1-title">AI object detection</h5>
+      <h5 class="card-title card1-title">Tech stack <br><small style="color: #fc00b9; border-radius: 5px;">&nbsp Python </small> </h5>
+      <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000> Programmed a basic AI object detection tool that uses a webcam to detect and distinguish between objects. 
+  </p>
+        <div class="container proLink">
+          <a href="https://github.com/Moachuba-Jamir/Moachuba-Jamir-site.git" class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
         </div>
-        <div class="card card1" data-aos=flip-left data-aos-easing=ease-out-cubic data-aos-duration=2000>
-          <img src=assets/loading.gif loading="lazy" class=card-img-top alt=projectImage>
-          <div class="card1-body card-body" data-aos=zoom-out-down data-aos-duration="600" data-aos-easing=ease-out-cubic>
-          <h5 class="card-title card1-title">Card title</h5>
-          <p class="card-text card1-text" data-aos=zoom-in-right data-aos-duration=1000>Some quick example text to build on the card title and make up the bulk of the card's content. Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, magni!.</p>
-            <div class="container proLink">
-              <a class='btn btn1' href='/src/project3'>Read more</a>
-              <a href=# class="btn btn1 btnGit"><img src="assets/logos/github.webp" loading="lazy" alt="#" class="socialIcons">&nbspGithub</a>
-            </div>
-          </div>
-          </div>
+      </div>
+      </div>
+
       </div>
     </div>
  
@@ -1001,7 +1016,7 @@ font-size: 1.3rem;
        method="POST">
 
         <input data-aos="fade-up" data-aos-duration="900" type="text" id="first_name" name="first_name" placeholder="Your Name"><br>
-        <input data-aos="fade-up" data-aos-duration="900" type="email" id="email" name="email" placeholder="email">
+        <input data-aos="fade-up" data-aos-duration="900" type="email" id="email" name="email" placeholder="Email">
         <textarea data-aos="zoom-in-up" data-aos-duration="700" id="message" name="message" rows="2" cols="30" placeholder="Message"></textarea><br>
         
         <input id="sub" type="submit" value="Submit">
